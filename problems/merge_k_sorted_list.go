@@ -1,5 +1,9 @@
 package problems
 
+import (
+	"fmt"
+)
+
 type ListNode struct {
 	Val  int
 	Next *ListNode
@@ -70,4 +74,42 @@ func MergeKSortedLists(lists []*ListNode) *ListNode {
 
 	}
 	return &rootNode
+}
+
+func TestMergeKSortedList() {
+	listOne := ListNode{
+		Val: 1,
+		Next: &ListNode{
+			Val: 4,
+			Next: &ListNode{
+				Val: 5,
+			},
+		},
+	}
+
+	listTwo := ListNode{
+		Val: 1,
+		Next: &ListNode{
+			Val: 3,
+			Next: &ListNode{
+				Val: 4,
+			},
+		},
+	}
+
+	listThree := ListNode{
+		Val: 2,
+		Next: &ListNode{
+			Val: 6,
+		},
+	}
+
+	node := (MergeKSortedLists([]*ListNode{&listOne, &listTwo, &listThree}))
+
+	for node != nil {
+		fmt.Print(node.Val, ", ")
+		node = node.Next
+	}
+
+	fmt.Println()
 }

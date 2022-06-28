@@ -1,5 +1,7 @@
 package myHeap
 
+import "fmt"
+
 type IntHeap []int
 
 func (h IntHeap) Len() int {
@@ -24,4 +26,14 @@ func (h *IntHeap) Pop() any {
 	x := old[n-1]
 	*h = old[0 : n-1]
 	return x
+}
+
+func TestMyIntHeap() {
+	h := &IntHeap{3, 5, 1, 2, 8, 4}
+	Init(h)
+	Push(h, 1)
+	fmt.Printf("%v\n", *h)
+	for h.Len() > 0 {
+		fmt.Print(Pop(h), ", ")
+	}
 }
