@@ -2,6 +2,9 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/ahmedMunna1767/100-LeetCode/myHeap"
+	"github.com/ahmedMunna1767/100-LeetCode/problems"
 )
 
 const (
@@ -60,6 +63,7 @@ func isMatch(s string, p string) bool {
 	}
 }
 
+// * DP solution
 func isMatchDynamic(s string, p string) bool {
 
 	// Init the memoization array
@@ -107,8 +111,56 @@ func isMatchDynamic(s string, p string) bool {
 	return dp(0, 0)
 }
 
-func main() {
+func testMergeKSortedList() {
+	listOne := problems.ListNode{
+		Val: 1,
+		Next: &problems.ListNode{
+			Val: 4,
+			Next: &problems.ListNode{
+				Val: 5,
+			},
+		},
+	}
+
+	listTwo := problems.ListNode{
+		Val: 1,
+		Next: &problems.ListNode{
+			Val: 3,
+			Next: &problems.ListNode{
+				Val: 4,
+			},
+		},
+	}
+
+	listThree := problems.ListNode{
+		Val: 2,
+		Next: &problems.ListNode{
+			Val: 6,
+		},
+	}
+
+	node := (problems.MergeKSortedLists([]*problems.ListNode{&listOne, &listTwo, &listThree}))
+
+	for node != nil {
+		fmt.Print(node.Val, ", ")
+		node = node.Next
+	}
+
+	fmt.Println()
+}
+
+func testFindKMedian() {
 	fmt.Println(isMatchDynamic("aa", ".."))
 	fmt.Println(isMatch("aa", ".."))
 	fmt.Println(findMedianSortedArrays([]int{1, 2}, []int{3, 4}))
+}
+
+func main() {
+
+	testMergeKSortedList()
+	testFindKMedian()
+
+	h := &myHeap.IntHeap{3, 5, 1, 2, 8, 4}
+	myHeap.Init(h)
+	fmt.Printf("%v", *h)
 }
