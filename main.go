@@ -1,12 +1,17 @@
 package main
 
-import "github.com/ahmedMunna1767/100-LeetCode/myStack"
+import (
+	"github.com/ahmedMunna1767/100-LeetCode/kmp"
+)
 
 func main() {
-	myStack.CheckStack()
+	kmp.TestKMP()
 }
 
 /* problems.TestFindKMedian()
+problems.TestSSS()
+	problems.TestMinDeletions()
+myStack.CheckStack()
 problems.TestLVP()
 priorityQueue.TestMyPriorityQueue()
 problems.TestMergeKSortedList()

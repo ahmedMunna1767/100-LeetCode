@@ -2,13 +2,6 @@ package problems
 
 import "fmt"
 
-func max(a, b int) int {
-	if a >= b {
-		return a
-	}
-	return b
-}
-
 func LongestValidParenthesis(s string) int {
 	stack := make([]int, 0)
 	stack = append(stack, -1)
