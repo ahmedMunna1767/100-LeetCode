@@ -24,7 +24,7 @@ func TopKFrequent(nums []int, k int) []int {
 		reverseHash[v] = append(reverseHash[v], key)
 	}
 
-	for key, _ := range reverseHash {
+	for key := range reverseHash {
 		keys = append(keys, key)
 	}
 
