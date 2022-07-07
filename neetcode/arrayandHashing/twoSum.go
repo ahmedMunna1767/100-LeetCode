@@ -1,4 +1,4 @@
-package neetcode
+package arrayandhashing
 
 func TwoSum(nums []int, target int) []int {
 

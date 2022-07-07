@@ -1,4 +1,4 @@
-package neetcode
+package arrayandhashing
 
 func ProductExceptSelf(nums []int) []int {
 	postFix := make([]int, len(nums))

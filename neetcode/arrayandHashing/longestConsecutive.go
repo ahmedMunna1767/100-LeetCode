@@ -1,4 +1,4 @@
-package neetcode
+package arrayandhashing
 
 func LongestConsecutive(nums []int) int {
 	hash := make(map[int]int)

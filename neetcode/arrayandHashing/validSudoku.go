@@ -1,4 +1,4 @@
-package neetcode
+package arrayandhashing
 
 func IsValidSudoku(board [][]byte) bool {
 	for i := 0; i < 9; i++ {

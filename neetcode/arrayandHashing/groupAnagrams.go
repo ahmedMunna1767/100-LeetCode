@@ -1,4 +1,4 @@
-package neetcode
+package arrayandhashing
 
 import (
 	"github.com/ahmedMunna1767/100-LeetCode/utility"

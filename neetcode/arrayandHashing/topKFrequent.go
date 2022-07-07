@@ -1,4 +1,4 @@
-package neetcode
+package arrayandhashing
 
 import (
 	"fmt"

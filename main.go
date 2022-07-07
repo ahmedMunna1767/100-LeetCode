@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/ahmedMunna1767/100-LeetCode/neetcode"
+	"github.com/ahmedMunna1767/100-LeetCode/neetcode/arrayandhashing"
 )
 
 func main() {
-	neetcode.RunTopKFreqElem()
+	arrayandhashing.RunTopKFreqElem()
 }
 
 /* problems.TestFindKMedian()
