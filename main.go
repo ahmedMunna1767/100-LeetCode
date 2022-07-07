@@ -1,14 +1,15 @@
 package main
 
 import (
-	"github.com/ahmedMunna1767/100-LeetCode/kmp"
+	"github.com/ahmedMunna1767/100-LeetCode/neetcode"
 )
 
 func main() {
-	kmp.TestKMP()
+	neetcode.TestContainsDuplicate()
 }
 
 /* problems.TestFindKMedian()
+kmp.TestKMP()
 problems.TestSSS()
 	problems.TestMinDeletions()
 myStack.CheckStack()
