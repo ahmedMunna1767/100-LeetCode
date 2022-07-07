@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	neetcode.TestContainsDuplicate()
+	neetcode.RunTopKFreqElem()
 }
 
 /* problems.TestFindKMedian()
