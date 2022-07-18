@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/ahmedMunna1767/100-LeetCode/neetcode/arrayandhashing"
+	"github.com/ahmedMunna1767/100-LeetCode/neetcode/slidingwindow"
 )
 
 func main() {
-	arrayandhashing.RunTopKFreqElem()
+	slidingwindow.TestCR()
 }
 
 /* problems.TestFindKMedian()
