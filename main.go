@@ -1,12 +1,19 @@
 package main
 
-import "github.com/ahmedMunna1767/100-LeetCode/neetcode/stack"
+import (
+	"github.com/ahmedMunna1767/100-LeetCode/neetcode/binarysearch"
+)
 
 func main() {
-	stack.GenerateParenthesis()
+	binarysearch.FindMin()
 }
 
 /* problems.TestFindKMedian()
+binarysearch.MinEatingSpeed()
+binarysearch.RotatedSearch()
+binarysearch.Search()
+binarysearch.SearchMatrix()
+stack.GenerateParenthesis()
 stack.EvalRPN()
 stack.TestValidParenthesis()
 slidingwindow.TestCR()
