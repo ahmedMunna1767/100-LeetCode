@@ -1,15 +1,17 @@
 package main
 
-import (
-	"github.com/ahmedMunna1767/100-LeetCode/neetcode/slidingwindow"
-)
+import "github.com/ahmedMunna1767/100-LeetCode/neetcode/linkedlist"
 
 func main() {
-	slidingwindow.LengthOfLongestSubstring()
-	// stack.DailyTemperatures()
+	linkedlist.RemoveNthFromEnd()
 }
 
 /* problems.TestFindKMedian()
+linkedlist.ReorderList()
+linkedlist.MergeTwoLists()
+linkedlist.ReverseList()
+stack.DailyTemperatures()
+slidingwindow.LengthOfLongestSubstring()
 slidingwindow.MaxSlidingWindow()
 slidingwindow.MinWindow()
 slidingwindow.CheckInclusion()

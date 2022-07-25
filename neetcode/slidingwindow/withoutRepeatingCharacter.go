@@ -2,7 +2,7 @@ package slidingwindow
 
 import "fmt"
 
-func engthOfLongestSubstring(s string) int {
+func lengthOfLongestSubstring(s string) int {
 	charSet := make(map[byte]int, 0)
 	l := 0
 	res := 0
