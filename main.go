@@ -3,10 +3,13 @@ package main
 import "github.com/ahmedMunna1767/100-LeetCode/neetcode/linkedlist"
 
 func main() {
-	linkedlist.RemoveNthFromEnd()
+	linkedlist.FindDuplicate()
 }
 
 /* problems.TestFindKMedian()
+linkedlist.AddTwoNumbers()
+linkedlist.CopyRandomList()
+linkedlist.RemoveNthFromEnd()
 linkedlist.ReorderList()
 linkedlist.MergeTwoLists()
 linkedlist.ReverseList()
